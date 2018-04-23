@@ -22,12 +22,95 @@
             <li class="site-list__item site-list__item--active"><a>подбор программы</a>
             </li>
           </ul>
-
+        <!--
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__login" href="login.html">Войти
+            </a>
+          </li>
+        </ul>-->
         </div>
       </nav>
     </header>
 
     <main class="page-form">
+      <h1>Подбор программы</h1>
+        <p>Заполните анкету и мы подберем программу питания для вашего кота
+        </p>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <h2 class="visually-hidden pet">О питомце
+            </h2>
+              <div class="pet__wrapper">
+                <label>имя:<sup>*</sup>
+                  <input type="text" name="username" value="барсик" required>
+                </label>
+                <label>вес (кг):<sup>*</sup>
+                  <input type="number" min="0" max="9" step="1" name="amount" value="7" required>
+                </label>
+                <label>возраст (лет):<sup>*</sup>
+                  <input type="number" min="0" max="35" step="1" name="amount" value="7">
+                </label>
+              </div>
+
+              <h2 class="visually-hidden programm-choice">Выбор программы
+              </h2>
+                <div class="programm-choice__wrapper">
+                  <label>
+                    <input type="radio" name="programms" value="slim" checked>
+                похудение
+                  </label>
+                  <label>
+                    <input type="radio" name="programms" value="fat" >
+                набор массы
+                  </label>
+                  <label>
+                    <input type="radio" name="programms" value="do-not-know" >
+                не знаю (нужен ваш совет)
+                  </label>
+                </div>
+
+              <h2 class="contacts">Контактные данные (владельца кота)
+              </h2>
+                <div class="contacts__wrapper">
+                  <label>e-mail:<sup>*</sup>
+                    <input type="email" name="email" required>
+                  </label>
+                  <label>телефон:<sup>*</sup>
+                    <input type="tel" id="tel" name="tel" value="8 (960) 900-60-90" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}">
+                  </label>
+                </div>
+
+              <h2 class="comment">Комментарий
+              </h2>
+                <div class="comment__wrapper">
+                  <label>
+                    <textarea name="comment" rows="5">расскажите обо всех повадках кота</textarea>
+                  </label>
+                </div>
+
+              <h2 class="other" >Дополнительно
+              </h2>
+                <div class="other__wrapper">
+                  <input type="checkbox" name="sweetener" id="sweetener" checked>
+                    <label for="sweetener">сахарозаменитель
+                    </label>
+                  <input type="checkbox" name="water" id="water" >
+                    <label for="water">питьевая вода
+                    </label>
+                  <input type="checkbox" name="milk" id="milk" >
+                    <label for="milk">молоко
+                    </label>
+                  <input type="checkbox" name="vitamins" id="vitamins" >
+                    <label for="vitamins">витамины
+                    </label>
+                </div>
+
+          <input type="submit" value="отправить заявку">
+
+          <p><sup>*</sup>- Обязательные поля</p>
+        </form>
+
+
     </main>
 
   <footer class="page-footer">
