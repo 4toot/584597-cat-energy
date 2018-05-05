@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>cat energy</title>
+  </head>
+  <body>
+
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="34" height="38" alt="Cat energy">
+      </a>
+      <nav class="catalog-nav">
+        <button class="gatalog-nav__toggle" type="button">Открыть меню
+        </button>
+        <div class="catalog-nav__wrapper">
+          <ul class="catalog-nav__list site-list">
+            <li class="site-list__item"><a href="#">главная</a>
+            </li>
+            <li class="site-list__item"><a href="#">каталог продукции</a>
+            </li>
+            <li class="site-list__item site-list__item--active"><a>подбор программы</a>
+            </li>
+          </ul>
+        <!--
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__login" href="login.html">Войти
+            </a>
+          </li>
+        </ul>-->
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-form">
+      <h1>Подбор программы</h1>
+        <p>Заполните анкету и мы подберем программу питания для вашего кота
+        </p>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <section class="pet">
+              <h2 class="visually-hidden">О питомце
+              </h2>
+                <div class="pet__wrapper">
+                  <label>имя:<sup>*</sup>
+                    <input type="text" name="username" value="барсик" required>
+                  </label>
+                  <label>вес (кг):<sup>*</sup>
+                    <input type="number" min="0" max="9" step="1" name="amount" value="7" required>
+                  </label>
+                  <label>возраст (лет):<sup>*</sup>
+                    <input type="number" min="0" max="35" step="1" name="amount" value="7">
+                  </label>
+                </div>
+            </section>
+
+            <section class="programm-choice">
+              <h2 class="visually-hidden">Выбор программы
+              </h2>
+                <div class="programm-choice__wrapper">
+                  <label>
+                    <input type="radio" name="programms" value="slim" checked>
+                похудение
+                  </label>
+                  <label>
+                    <input type="radio" name="programms" value="fat" >
+                набор массы
+                  </label>
+                  <label>
+                    <input type="radio" name="programms" value="do-not-know" >
+                не знаю (нужен ваш совет)
+                  </label>
+                </div>
+            </section>
+
+            <section class="contacts">
+              <h2>Контактные данные (владельца кота)
+              </h2>
+                <div class="contacts__wrapper">
+                  <label>e-mail:<sup>*</sup>
+                    <input type="email" name="email" value="kuklachev@gmail.com" required>
+                  </label>
+                  <label>телефон:<sup>*</sup>
+                    <input type="tel" id="tel" name="tel" value="8 (960) 900-60-90" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}">
+                  </label>
+                </div>
+            </section>
+
+            <section class="comment">
+              <h2>Комментарий
+              </h2>
+                <div class="comment__wrapper">
+                  <label>
+                    <textarea name="comment" rows="5">расскажите обо всех повадках кота</textarea>
+                  </label>
+                </div>
+            </section>
+
+            <section class="other">
+              <h2>Дополнительно
+              </h2>
+                <div class="other__wrapper">
+                  <input type="checkbox" name="sweetener" id="sweetener" checked>
+                    <label for="sweetener">сахарозаменитель
+                    </label>
+                  <input type="checkbox" name="water" id="water" >
+                    <label for="water">питьевая вода
+                    </label>
+                  <input type="checkbox" name="milk" id="milk" >
+                    <label for="milk">молоко
+                    </label>
+                  <input type="checkbox" name="vitamins" id="vitamins" >
+                    <label for="vitamins">витамины
+                    </label>
+                </div>
+              <input type="submit" value="отправить заявку">
+                <p><sup>*</sup>- Обязательные поля</p>
+            </section>
+          </form>
+
+          <section class="contacts-shop">
+            <div class="contacts-shop__wrapper">
+              <h2 class="visually-hidden">Адрес и контакты магазина</h2>
+                <b>приглашаем к сотрудничеству дилеров!
+                </b>
+                <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+                </p>
+                <p>
+                  <img src="img/map.jpg" width="320" height="362" alt="катра местонахождения магазина">
+                </p>
+            </div>
+          </section>
+    </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a class="page-footer__main-link" href="#">cat energy
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме
+          </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  </body>
+</html>
