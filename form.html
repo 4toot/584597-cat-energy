@@ -38,21 +38,24 @@
         <p>Заполните анкету и мы подберем программу питания для вашего кота
         </p>
           <form action="https://echo.htmlacademy.ru" method="post">
-            <h2 class="visually-hidden pet">О питомце
-            </h2>
-              <div class="pet__wrapper">
-                <label>имя:<sup>*</sup>
-                  <input type="text" name="username" value="барсик" required>
-                </label>
-                <label>вес (кг):<sup>*</sup>
-                  <input type="number" min="0" max="9" step="1" name="amount" value="7" required>
-                </label>
-                <label>возраст (лет):<sup>*</sup>
-                  <input type="number" min="0" max="35" step="1" name="amount" value="7">
-                </label>
-              </div>
+            <section class="pet">
+              <h2 class="visually-hidden">О питомце
+              </h2>
+                <div class="pet__wrapper">
+                  <label>имя:<sup>*</sup>
+                    <input type="text" name="username" value="барсик" required>
+                  </label>
+                  <label>вес (кг):<sup>*</sup>
+                    <input type="number" min="0" max="9" step="1" name="amount" value="7" required>
+                  </label>
+                  <label>возраст (лет):<sup>*</sup>
+                    <input type="number" min="0" max="35" step="1" name="amount" value="7">
+                  </label>
+                </div>
+            </section>
 
-              <h2 class="visually-hidden programm-choice">Выбор программы
+            <section class="programm-choice">
+              <h2 class="visually-hidden">Выбор программы
               </h2>
                 <div class="programm-choice__wrapper">
                   <label>
@@ -68,8 +71,10 @@
                 не знаю (нужен ваш совет)
                   </label>
                 </div>
+            </section>
 
-              <h2 class="contacts">Контактные данные (владельца кота)
+            <section class="contacts">
+              <h2>Контактные данные (владельца кота)
               </h2>
                 <div class="contacts__wrapper">
                   <label>e-mail:<sup>*</sup>
@@ -79,16 +84,20 @@
                     <input type="tel" id="tel" name="tel" value="8 (960) 900-60-90" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}">
                   </label>
                 </div>
+            </section>
 
-              <h2 class="comment">Комментарий
+            <section class="comment">
+              <h2>Комментарий
               </h2>
                 <div class="comment__wrapper">
                   <label>
                     <textarea name="comment" rows="5">расскажите обо всех повадках кота</textarea>
                   </label>
                 </div>
+            </section>
 
-              <h2 class="other" >Дополнительно
+            <section class="other">
+              <h2>Дополнительно
               </h2>
                 <div class="other__wrapper">
                   <input type="checkbox" name="sweetener" id="sweetener" checked>
@@ -106,6 +115,7 @@
                 </div>
               <input type="submit" value="отправить заявку">
                 <p><sup>*</sup>- Обязательные поля</p>
+            </section>
           </form>
 
           <section class="contacts-shop">
